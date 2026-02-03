@@ -59,7 +59,7 @@ export function HeroSection() {
             </div>
 
             <div ref={buttonsRef} className="flex flex-col sm:flex-row gap-4 opacity-0">
-              <button className="px-8 py-4 rounded-lg shadow-lg flex items-center justify-center gap-2 group cursor-pointer transition-all" style={{ backgroundColor: '#F4A940', color: 'white' }}>
+              <button className="px-8 py-4 rounded-lg border-none shadow-lg flex items-center justify-center gap-2 group cursor-pointer transition-all" style={{ backgroundColor: '#F4A940', color: 'white' }}>
                 Start Interviewing Today
                 <ArrowRight className="transition-transform" size={20} />
               </button>
