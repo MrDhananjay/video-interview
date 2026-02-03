@@ -58,7 +58,6 @@ const features = [
       { label: '256-bit Encryption', color: tagColors.peach }, // Changed to Peach
       { label: 'Azure Hosting', color: tagColors.blue },
       { label: 'GDPR Compliant', color: tagColors.mint },
-      { label: 'SOC 2 Certified', color: tagColors.yellow },
       { label: 'Data Privacy', color: tagColors.pink },
     ],
   },

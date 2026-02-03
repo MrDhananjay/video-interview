@@ -126,14 +126,13 @@ export function HowItWorksSection() {
     <section ref={containerRef} id="how-it-works" className="py-24 bg-[#F8F9FB] relative overflow-hidden">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
         {/* Section Header */}
-        <div ref={titleRef} className="max-w-5xl mx-auto mb-16 opacity-0">
-          <h2 className="text-4xl md:text-5xl font-bold text-gray-900 tracking-tight mb-6">
+        <div ref={titleRef} className="max-w-7xl mx-auto mb-16 opacity-0">
+          <h2 className="text-4xl sm:text-5xl lg:text-6xl font-bold leading-tight mb-6" style={{ color: '#000000ff' }}>
             How It Works
           </h2>
 
-          <p className="text-xl text-gray-600 leading-relaxed max-w-2xl">
-            Streamline your hiring process with our intelligent automation.
-            From upload to offer, we handle the heavy lifting.
+          <p className="text-lg sm:text-xl leading-relaxed max-w-2xl" style={{ color: '#2D3748' }}>
+            Your Interview Process, Simplified: From Setup to Hire in Four Simple Steps
           </p>
         </div>
 
