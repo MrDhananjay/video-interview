@@ -99,7 +99,7 @@ export function HowItWorksSection() {
   const lastTwoSteps = steps.slice(2, 4);
 
   const StepCard = ({ step, index }) => (
-    <div className="group relative bg-white rounded-2xl p-6 shadow-[0_2px_15px_-3px_rgba(0,0,0,0.07),0_10px_20px_-2px_rgba(0,0,0,0.04)] hover:shadow-xl transition-all duration-300 border border-gray-100 hover:border-blue-100/50 hover:-translate-y-1">
+    <div className="group relative bg-white rounded-2xl p-6 shadow-xl hover:shadow-2xl transition-all duration-300 border border-gray-100 hover:border-blue-100/50 hover:-translate-y-1">
       <div className="relative z-10 flex flex-col h-full">
         {/* Header with Icon */}
         <div className="flex justify-between items-start mb-4">
@@ -142,7 +142,7 @@ export function HowItWorksSection() {
           {/* Desktop Layout: 3-column grid */}
           <div className="hidden lg:grid lg:grid-cols-3 gap-12 items-center">
             {/* Left Column: Steps 1-2 */}
-            <div className="space-y-6">
+            <div className="flex flex-col gap-12">
               {firstTwoSteps.map((step, index) => (
                 <StepCard key={index} step={step} index={index} />
               ))}
@@ -161,29 +161,12 @@ export function HowItWorksSection() {
                     className="relative rounded-2xl shadow-2xl max-w-full h-auto border border-gray-200/50"
                     style={{ maxHeight: '300px', width: 'auto' }}
                   />
-                  {/* Blurred bottom half overlay */}
-                  <img
-                    src="/report.svg"
-                    alt=""
-                    aria-hidden="true"
-                    className="absolute top-0 left-0 rounded-2xl max-w-full h-auto"
-                    style={{
-                      maxHeight: '300px',
-                      width: '100%',
-                      filter: 'blur(6px)',
-                      clipPath: 'inset(50% 0 0 0)'
-                    }}
-                  />
                 </div>
-                {/* Caption */}
-                <p className="text-center text-sm text-gray-500 mt-4 font-medium">
-                  AI-Generated Assessment Report
-                </p>
               </div>
             </div>
 
             {/* Right Column: Steps 3-4 */}
-            <div className="space-y-6">
+            <div className="flex flex-col gap-12">
               {lastTwoSteps.map((step, index) => (
                 <StepCard key={index + 2} step={step} index={index + 2} />
               ))}
@@ -211,23 +194,7 @@ export function HowItWorksSection() {
                     className="relative rounded-2xl shadow-xl max-w-full h-auto border border-gray-200/50"
                     style={{ maxHeight: '400px', width: 'auto' }}
                   />
-                  {/* Blurred bottom half overlay */}
-                  <img
-                    src="/report.svg"
-                    alt=""
-                    aria-hidden="true"
-                    className="absolute top-0 left-0 rounded-2xl max-w-full h-auto"
-                    style={{
-                      maxHeight: '400px',
-                      width: '100%',
-                      filter: 'blur(6px)',
-                      clipPath: 'inset(50% 0 0 0)'
-                    }}
-                  />
                 </div>
-                <p className="text-center text-sm text-gray-500 mt-4 font-medium">
-                  AI-Generated Assessment Report
-                </p>
               </div>
             </div>
 
