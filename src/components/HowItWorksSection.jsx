@@ -99,7 +99,7 @@ export function HowItWorksSection() {
   const lastTwoSteps = steps.slice(2, 4);
 
   const StepCard = ({ step, index }) => (
-    <div className="group relative bg-white rounded-2xl p-6 shadow-xl hover:shadow-2xl transition-all duration-300 border border-gray-100 hover:border-blue-100/50 hover:-translate-y-1">
+    <div className="group relative bg-white rounded-2xl p-6 transition-all duration-300 border border-gray-100 hover:border-blue-100/50 hover:-translate-y-1">
       <div className="relative z-10 flex flex-col h-full">
         {/* Header with Icon */}
         <div className="flex justify-between items-start mb-4">
