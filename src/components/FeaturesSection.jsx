@@ -72,7 +72,7 @@ const features = [
       { label: 'Skill Breakdown', color: tagColors.purple },
       { label: 'Team Sharing', color: tagColors.pink },
       { label: 'Candidate Ranking', color: tagColors.blue },
-      { label: 'Progress Tracking', color: tagColors.mint },
+      { label: 'Interview Recordings', color: tagColors.mint },
     ],
   },
 ];
@@ -120,8 +120,8 @@ export function FeaturesSection() {
   return (
     <section ref={containerRef} id="features" className="py-20 md:py-32 bg-gradient-to-br from-white via-[#F8F9FA] to-white">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-        {/* Section Header - Left Aligned */}
-        <div ref={titleRef} className="max-w-3xl mb-16 opacity-0">
+        {/* Section Header */}
+        <div ref={titleRef} className="max-w-3xl mx-auto mb-16 opacity-0 text-center">
           <h2 className="text-4xl sm:text-5xl font-bold mb-6 leading-tight" style={{ fontFamily: 'Poppins, sans-serif', color: '#000000' }}>
             Interviews That Actually Reveal Talent
           </h2>
@@ -145,7 +145,7 @@ export function FeaturesSection() {
               }}
             >
               {/* Two Column Layout */}
-              <div className="flex flex-col lg:flex-row lg:items-start lg:justify-between lg:gap-16">
+              <div className="flex flex-col lg:flex-row lg:items-baseline lg:justify-between lg:gap-16">
                 {/* Left Side - Title & Description */}
                 <div className="lg:w-1/2">
                   {/* Category Pill */}
@@ -187,7 +187,7 @@ export function FeaturesSection() {
 
                 {/* Right Side - Key Components */}
                 <div className="lg:w-1/2 mt-8 lg:mt-0">
-                  <h4 style={{ fontSize: '16px', fontWeight: 600, color: '#374151', marginBottom: '36px' }}>
+                  <h4 style={{ fontSize: '16px', fontWeight: 600, color: '#374151', marginBottom: '16px' }}>
                     Key components
                   </h4>
 

@@ -15,16 +15,16 @@ const steps = [
     description: 'Add the job description and candidate resume. Our AI instantly creates personalized interview questions.',
   },
   {
-    number: "02",
-    icon: Users,
-    title: 'Schedule Seamlessly',
-    description: 'Pick a time that works across any timezone. Send invites with one click.',
-  },
-  {
     number: "03",
     icon: Video,
     title: 'Let AI Do the Interviewing',
     description: 'Your AI interviewer connects with candidates in real-time, asks tailored questions, and evaluates responses instantly.',
+  },
+  {
+    number: "02",
+    icon: Users,
+    title: 'Schedule Seamlessly',
+    description: 'Pick a time that works across any timezone. Send invites with one click.',
   },
   {
     number: "04",
@@ -126,12 +126,12 @@ export function HowItWorksSection() {
     <section ref={containerRef} id="how-it-works" className="py-24 bg-[#F8F9FB] relative overflow-hidden">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
         {/* Section Header */}
-        <div ref={titleRef} className="max-w-7xl mx-auto mb-16 opacity-0">
+        <div ref={titleRef} className="max-w-7xl mx-auto mb-16 opacity-0 text-center">
           <h2 className="text-4xl sm:text-5xl lg:text-6xl font-bold leading-tight mb-6" style={{ color: '#000000ff' }}>
             How It Works
           </h2>
 
-          <p className="text-lg sm:text-xl leading-relaxed max-w-2xl" style={{ color: '#2D3748' }}>
+          <p className="text-lg sm:text-xl leading-relaxed max-w-2xl mx-auto" style={{ color: '#2D3748' }}>
             Your Interview Process, Simplified: From Setup to Hire in Four Simple Steps
           </p>
         </div>
@@ -140,7 +140,7 @@ export function HowItWorksSection() {
         {/* Main Content: Steps + Report Image */}
         <div ref={contentRef} className="max-w-6xl mx-auto">
           {/* Desktop Layout: 3-column grid */}
-          <div className="hidden lg:grid lg:grid-cols-3 gap-8 items-center">
+          <div className="hidden lg:grid lg:grid-cols-3 gap-12 items-center">
             {/* Left Column: Steps 1-2 */}
             <div className="space-y-6">
               {firstTwoSteps.map((step, index) => (
@@ -153,13 +153,13 @@ export function HowItWorksSection() {
               <div className="relative">
                 {/* Decorative background */}
                 <div className="absolute -inset-4 bg-gradient-to-br from-blue-100/50 to-purple-100/50 rounded-3xl blur-2xl"></div>
-                <div className="relative" style={{ maxHeight: '500px' }}>
+                <div className="relative" style={{ maxHeight: '300px' }}>
                   {/* Original image */}
                   <img
                     src="/report.svg"
                     alt="AI-Generated Technical Assessment Report"
                     className="relative rounded-2xl shadow-2xl max-w-full h-auto border border-gray-200/50"
-                    style={{ maxHeight: '500px', width: 'auto' }}
+                    style={{ maxHeight: '300px', width: 'auto' }}
                   />
                   {/* Blurred bottom half overlay */}
                   <img
@@ -168,7 +168,7 @@ export function HowItWorksSection() {
                     aria-hidden="true"
                     className="absolute top-0 left-0 rounded-2xl max-w-full h-auto"
                     style={{
-                      maxHeight: '500px',
+                      maxHeight: '300px',
                       width: '100%',
                       filter: 'blur(6px)',
                       clipPath: 'inset(50% 0 0 0)'

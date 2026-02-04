@@ -59,10 +59,10 @@ export function BenefitsSection() {
         <section ref={containerRef} id="benefits" className="py-24 bg-gray-50 overflow-hidden">
             <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
                 <div ref={titleRef} className="text-center max-w-3xl mx-auto mb-16 opacity-0">
-                    <h2 className="text-3xl sm:text-4xl md:text-5xl font-bold mb-6" style={{ color: '#0A337A' }}>
+                    <h2 className="text-4xl sm:text-5xl lg:text-6xl font-bold leading-tight mb-6" style={{ color: '#000000ff' }}>
                         The Difference You'll Notice Immediately
                     </h2>
-                    <p className="text-lg text-gray-600">
+                    <p className="text-lg sm:text-xl leading-relaxed text-gray-600">
                         Our platform doesn't just change how you interview—it transforms your entire recruitment outcome.
                     </p>
                 </div>
@@ -71,15 +71,15 @@ export function BenefitsSection() {
                     {benefits.map((benefit, index) => (
                         <div
                             key={index}
-                            className="bg-white p-8 rounded-2xl shadow-sm border border-gray-100 hover:shadow-xl transition-all duration-300 group hover:-translate-y-1 opacity-0"
+                            className="group relative bg-white p-8 rounded-2xl shadow-[0_2px_15px_-3px_rgba(0,0,0,0.07),0_10px_20px_-2px_rgba(0,0,0,0.04)] hover:shadow-xl transition-all duration-300 border border-gray-100 hover:border-blue-100/50 hover:-translate-y-1 opacity-0"
                         >
                             <div
-                                className="w-14 h-14 rounded-xl flex items-center justify-center mb-6 group-hover:scale-110 transition-transform duration-300"
-                                style={{ backgroundColor: `${benefit.color}10`, color: benefit.color }}
+                                className="w-14 h-14 rounded-xl flex items-center justify-center mb-6 bg-gray-50 group-hover:scale-110 transition-transform duration-300"
+                                style={{ color: benefit.color }}
                             >
                                 <benefit.icon size={28} />
                             </div>
-                            <h3 className="text-xl font-bold mb-3 text-gray-900">
+                            <h3 className="text-xl font-bold mb-3 text-gray-900 group-hover:text-blue-600 transition-colors duration-300">
                                 {benefit.title}
                             </h3>
                             <p className="text-gray-600 leading-relaxed text-sm">
